@@ -1,0 +1,21 @@
+{
+  "name": "backend-firebase",
+  "version": "0.1.0",
+  "description": "Una Api que permita almacenar datos sobre videojuegos",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "Gaming",
+    "API",
+    "Node.js",
+    "Node"
+  ],
+  "author": "Esteban Hernandez A",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

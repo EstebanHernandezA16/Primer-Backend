@@ -1,0 +1,30 @@
+Objetivo: Backend usando Firebase
+Tematica: Videojuegos
+
+Tabla Videojuego:
+*Id_Firebase,
+*Nombre_VideoJuego,
+*Nombre_CasaDesarrolladora,
+*Fecha_Publicacion,
+*Descripcion,
+*Img_Banner,
+*Plataformas(Pc, Xbox ,Ps4, Switch),
+*Genero,
+
+
+
+---------------------------
+Tabla CasaDesarrolladora
+*Id_Firebase,
+*Nombre_CasaDesarrolladora,
+*Actual_Gerente,
+*Direccion,
+*Fecha_Inauguracion,
+*Pais
+
+--------------------------
+Tabla Genero
+*Id_Firebase
+*Nombre_Genero,
+*Descripcion,
+
