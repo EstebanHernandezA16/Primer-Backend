@@ -1,34 +1,48 @@
+const model = require('../models/developersModels')
 
 
 
+const addDeveloper = async(req,res) =>{
+try{
+    const response = await model.addDeveloperModel(req, res)
+        res.status(201).send(response);
+    }catch(error){
+        res.status(500).send(error.message);
 
-const AddDeveloper = async(req,res) =>{
+    }
+   
 
-    const {devName, manager, adress, opening_Date, country} = req.body
-
-    //AND THAT'S ALL FRIENDS!!! at least for this week.
+   
 }
 
-const GetDeveloper =  async(req,res) =>{
+//repetir el proceso con el resto de controladores
+const getDeveloper = async (req, res) => {
+
+  try {
+    const response = await model.getDeveloperModel(req, res)
+    res.status(202).send(response)
+  } catch (error) {
+    res.status(500).send(error.message)
+  }
+
+};
+
+
+const modifyDeveloper = async(req,res) =>{
 
 }
 
-
-const ModifyDeveloper = async(req,res) =>{
-
-}
-
-const DeleteDeveloper = async(req,res) =>{
+const deleteDeveloper = async(req,res) =>{
 
 }
 
 
 
 module.exports ={
-    AddDeveloper,
-    GetDeveloper,
-    ModifyDeveloper,
-    DeleteDeveloper,
+    addDeveloper,
+    getDeveloper,
+    modifyDeveloper,
+    deleteDeveloper,
 }
 
 
